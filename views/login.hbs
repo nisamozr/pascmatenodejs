@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+	<title>PASCMATE</title>
+    <link rel="icon" href="images/fav.png" type="image/png" sizes="16x16"> 
+    
+    <link rel="stylesheet" href="css/main.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/color.css">
+    <link rel="stylesheet" href="css/responsive.css">
+
+</head>
+<body>
+<!--<div class="se-pre-con"></div>-->
+
+	<a class="dd" title="" href="index.html"><img src="images/logo.png" alt=""></a>
+
+<div class="theme-layout">
+	<div class="container-fluid pdng0">
+		<div class="row merged">
+			<div class="lap col-lg-6 col-md-6 col-sm-6 col-xs-12">
+				<div class="land-featurearea">
+					<div class="land-meta">
+						<h1>PASCMATE</h1>
+						<p>
+							PASCMATE is not a media. The key is to listen, engage, and build relationships.
+						</p>
+						<div class="friend-logo">
+							<img src="images/12.png" alt="">
+						</div>
+						
+					</div>	
+				</div>
+			</div>
+			<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+				
+					<!--  -->
+				
+				<div class="login-reg-bg">
+					<div class="log-reg-area sign">
+						<h2 class="log-title">Login</h2>
+						{{#if loginErr}}
+						<small>invalid Username or password</small>
+
+						{{/if}}
+							
+						<form action="/login" method="post">
+							<div class="form-group">	
+							  <input type="email" id="input" name="Email" required="required"/>
+							  <label class="control-label" for="input">Username</label><i class="mtrl-select"></i>
+							</div>
+							<div class="form-group">	
+							  <input type="password" name="Password" required="required"/>
+							  <label class="control-label" for="input">Password</label><i class="mtrl-select"></i>
+							</div>
+							<div class="checkbox">
+							  <label>
+								<input type="checkbox" checked="checked"/><i class="check-box"></i>Always Remember Me.
+							  </label>
+							</div>
+							<a href="#" title="" class="forgot-pwd">Forgot Password?</a>
+							<div class="submit-btns">
+								<button class="mtr-btn signin" type="submit"><span>Login</span></button>
+											<a href="/signup">	<button class="mtr-btn signup"  type="button"><span>Register</span></button></a>
+						</form>
+					</div>
+					
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+	
+	<script data-cfasync="false" src="../../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="js/main.min.js"></script>
+	<script src="js/script.js"></script>
+
+</body>	
+
+</html>
