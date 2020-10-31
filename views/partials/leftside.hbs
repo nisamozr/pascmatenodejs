@@ -64,15 +64,19 @@
 										<ul class="short-profile">
 											<li>
 												<span>about</span>
-												<p>Hi, i am jhon kates, i am 32 years old and worked as a web developer in microsoft company. </p>
+												<p>{{user.Aboutme}} </p>
 											</li>
 											<li>
-												<span>fav tv show</span>
-												<p>Hi, i am jhon kates, i am 32 years old and worked as a web developer in microsoft company. </p>
+												<span>College</span>
+												<p>{{user.Education.[0]}} <br><b>Course: </b>{{user.Education.[1]}} </p>
+												<p></p>
+												
 											</li>
 											<li>
 												<span>favourit music</span>
-												<p>Hi, i am jhon kates, i am 32 years old and worked as a web developer in microsoft company. </p>
+												<p>{{#each user.Intresrt}}
+												{{this.[0]}},
+												{{/each}} </p>
 											</li>
 										</ul>
 									</div><!-- profile intro widget -->

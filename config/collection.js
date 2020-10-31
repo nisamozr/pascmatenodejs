@@ -1,4 +1,5 @@
 module.exports={
 
-    user_collection:'user'
+    user_collection:'user',
+    USER_POST:'post'
 }

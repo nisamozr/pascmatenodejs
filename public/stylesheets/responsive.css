@@ -1480,6 +1480,295 @@
     
     
 }
+.useinde{
+    z-index: 9;
+}
+}
+@media screen and (max-width: 360px) {
+    .user-avatar {
+        width: 40%;
+    }
+    #people-list figure {
+        width: 21.4%;
+    }
+    .sidebar .widget ul.recent-photos li {
+        margin-bottom: 10px;
+        width: 32.2%;
+    }
+    .message-text-container form button {
+        right: 5px;
+    }
+    .peoples-mesg-box {
+        padding: 10px;
+    }
+    .coment-head > h5 {
+        white-space: nowrap;
+        max-width: 45%;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+    .we-reply {
+        vertical-align: super;
+    }
+    .coment-head > span {
+        vertical-align: top;
+    }
+    .timeline-info > ul li.admin-name {
+        left: 153px;
+        margin-right: 0;
+        position: absolute;
+        top: -100px;
+    }
+    .timeline-info > ul li {
+        margin-right: 0;
+    }
+    .feature-photo .container-fluid {
+        padding: 0 15px;
+    }
+    .timeline-info .admin-name > h5 {
+        color: #424242;
+        text-shadow: none;
+    }
+    .comet-avatar {
+        max-width: 7.3%;
+        width: 7.3%;
+    }
+    .liked-pages > li {
+        max-width: 48.2%;
+        min-width: 48.2%;
+        width: 48.2%;
+    }
+    .page-infos > h5 {
+        font-size: 13px;
+    }
+    .add-btn {
+        top: 69px;
+        right: 20px;
+    }
+    .linked-image > a {
+        display: inline-block;
+        width: 100%;
+    }
+    .linked-image > a img {
+        width: 100%;
+    }
+    .align-left {
+        margin-right: 0;
+        width: 100%;
+    }
+    .post-meta .detail {
+        width: 100%;
+    }
+    .we-video-info > ul {
+        padding-left: 5px;
+    }
+    .editing-interest form ol > li {
+        width: 49%;
+    }
+    .colla-apps > li {
+        width: 100%;
+    }
+    .top-banner {
+        padding-left: 0;
+    }
+    .frnds .nav-tabs .nav-item {
+        margin-right: 28px;
+    }
+    .pepl-info > em {
+        float: right;
+        margin-left: 0px;
+        vertical-align: sub;
+        font-size: 10px;
+    }
+    a.add-butn {
+        font-size: 10px;
+        padding: 5px 6px;
+    }
+    .pepl-info > h4 {
+        width: auto;
+    }
+    .pepl-info {
+        width: 82%;
+    }
+    #frends a.add-butn.more-action {
+        right: 65px;
+    }
+    .frnds .nav-tabs .nav-item > span {
+        font-size: 11px;
+    }
+    .frnds .nav-tabs .nav-item {
+        font-size: 14px;
+    }
+    #frends a.add-butn.more-action,
+    a.add-butn.more-action {
+        position: unset;
+    }
+    nav.breadcrumb {
+        width: 47%;
+    }
+    .add_to_wishlist {
+        margin-left: 0;
+    }
+    .single-btn > li {
+        margin-right: 0;
+        width: 100%;
+    }
+    .single-btn > li > a {
+        margin-bottom: 10px;
+    }
+    .nav.nav-tabs.single-btn {
+        padding-bottom: 0;
+    }
+    .purify .chosen-container {
+        margin-bottom: 10px;
+        width: 100% !important;
+    }
+    .career-page .purify .chosen-container {
+        width: 100% !important;
+    }
+    .more-branches {
+        padding: 30px 20px 20px;
+    }
+    .l-post .l-post-meta > h4 {
+        font-size: 18px;
+    }
+    .tags > a {
+        font-size: 13px;
+    }
+    .commenter-photo {
+        display: inline-block;
+        text-align: center;
+        width: 100%;
+    }
+    .commenter-meta {
+        display: inline-block;
+        margin-top: 20px;
+        max-width: 100%;
+        padding-left: 0;
+        width: 100%;
+    }
+    .comment-box {
+        padding: 20px;
+    }
+    .comments > li > ul {
+        padding-left: 0;
+    }
+    .help-topic {
+        padding-left: 0;
+    }
+    .help-assistant {
+        width: 100%;
+    }
+    .assistant-name {
+        width: 50%;
+    }
+    .post-dated {
+        width: 100%;
+    }
+    .is-helpful {
+        margin-top: 30px;
+    }
+    nav.breadcrumb {
+        width: 100%;
+    }
+    .getquot-baner {
+        padding: 35px 25px;
+    }
+    .videobg-meta > h3 {
+        font-size: 23px;
+    }
+    .videobg-meta {
+        left: 20px;
+    }
+    .job-detail > ul li span {
+        width: 90%;
+    }
+    .sociaz-media > li {
+        margin: 0 0 4px;
+    }
+    .employer-info > ul li > i {
+        display: inline-block;
+        width: 100%;
+    }
+    .employer-info > ul li {
+        margin-bottom: 15px;
+    }
+
+}
+
+@media screen and (max-width: 320px) {
+    .user-avatar {
+        width: 40%;
+    }
+    #people-list figure {
+        width: 20%;
+    }
+    .sidebar .widget ul.recent-photos li {
+        width: 32.1%;
+        margin-bottom: 4px;
+    }
+    .friend-logo > span {
+        font-size: 170px;
+    }
+    .frnds .nav-tabs .nav-item {
+        font-size: 14px;
+        margin-right: 15px;
+    }
+    .timeline-info > ul li.admin-name {
+        left: 128px;
+        top: -95px;
+    }
+    .add-btn {
+        right: 6px;
+        top: 57px;
+    }
+    .feature-photo > .edit-phto {
+        top: 10px;
+    }
+    .timeline-info .admin-name > span {
+        color: #333;
+    }
+    .timeline-info .admin-name > h5 {
+        color: #424242;
+        font-size: 20px;
+    }
+    .comet-avatar {
+        max-width: 10%;
+        width: 10%;
+    }
+    .liked-pages > li {
+        max-width: 48%;
+        min-width: 48%;
+        width: 48%;
+    }
+    .nearby-contct > li {
+        padding: 10px;
+    }
+    .pepl-info {
+        width: 81%;
+    }
+    .pepl-info > h4 {
+        width: auto;
+    }
+    .we-video-info > ul li.social-media {
+        position: absolute;
+        right: 20px;
+        top: -41px;
+    }
+    .pepl-info {
+        width: 80%;
+    }
+    .delivery-guide {
+        margin-bottom: 15px;
+    }
+    .add_to_wishlist {
+        margin-bottom: 14px;
+    }
+    nav.breadcrumb {
+        width: 100%;
+    }
+    .apply-bttons > a{font-size: 13px; padding: 8px 14px;}
+
 }
 
 

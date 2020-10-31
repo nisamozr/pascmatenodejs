@@ -1,16 +1,17 @@
 		
 	<section>
+		   
 		<div class="feature-photo">
-			<figure><img src="images/resources/timeline-1.jpg" alt=""></figure>
+			<figure><img src="/userData/Cover/{{user._id}}.jpg" class="cover-Photo" id="cover-Photo"  style="width: 100%; height:350px" alt=""></figure>
 			<div class="add-btn">
 				<span>1205 followers</span>
 				<a href="#" title="" data-ripple="">Add Friend</a>
 			</div>
-			<form class="edit-phto">
+			<form class="edit-phto" action="/editCover" id="form-cover-photo" method="POST" >
 				<i class="fa fa-camera-retro"></i>
 				<label class="fileContainer">
 					Edit Cover Photo
-				<input type="file"/>
+				<input type="file" accept="image/*" id="coverPhoto" name="coverPhoto" />
 				</label>
 			</form>
 			<div class="container-fluid">
@@ -18,12 +19,12 @@
 					<div class="col-lg-2 col-sm-3">
 						<div class="user-avatar">
 							<figure>
-								<img src="images/resources/user-avatar.jpg" alt="">
-								<form class="edit-phto">
+								<img src="/userData/ProfilePic/{{user._id}}.jpg"  class="profile-image" id="profile-image"  alt="" style="width: 100%; min-height:150px;">
+								<form action="/editprofilpic" class="edit-phto"   method="POST"  id="profile-image">
 									<i class="fa fa-camera-retro"></i>
 									<label class="fileContainer">
 										Edit Display Photo
-										<input type="file"/>
+										<input type="file" accept="image/*" id="profilImage" name="profilImage" />
 									</label>
 								</form>
 							</figure>
@@ -52,4 +53,6 @@
 				</div>
 			</div>
 		</div>
+	<div id="response"></div>
 	</section><!-- top area -->
+

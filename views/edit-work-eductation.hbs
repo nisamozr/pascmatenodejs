@@ -12,47 +12,30 @@
                                 <div class="editing-info">
                                     <h5 class="f-title"><i class="ti-info-alt"></i> Edit work & Education</h5>
 
-                                    <form method="post">
-                                        <div class="checkbox">
-                                             <label>
-                                                <input type="checkbox" checked="checked"><i
-                                                    class="check-box"></i>SSLC
-                                            </label>
-                                             <label>
-                                                <input type="checkbox" ><i
-                                                    class="check-box"></i>Pluse Two
-                                            </label>
-                                            <label>
-                                                <input type="checkbox" ><i
-                                                    class="check-box"></i>Graduate
-                                            </label>
-                                        </div>
-                                        <div class="checkbox">
-                                            <label>
-                                                <input type="checkbox" ><i
-                                                    class="check-box"></i>Masters
-                                            </label>
-                                        </div>
+                                    <form action="/editeducation" method="post">
+                                       
                                         <div class="form-group">
-                                            <input type="text" id="input" required="required" />
-                                            <label class="control-label" for="input">Studying at</label><i
+                                            <input type="text" id="input" name="Collegename" required="required" value="{{user.Education.[0]}}" />
+                                            <label class="control-label" for="input">College Name</label><i
                                                 class="mtrl-select"></i>
                                         </div>
                                        
                                         <div class="form-group">
-                                            <input type="text" required="required" />
-                                            <label class="control-label" for="input">Location</label><i
+                                            <input type="text" name="Course" required="required" value="{{user.Education.[1]}}"/>
+                                            <label class="control-label" for="input">Course</label><i
                                                 class="mtrl-select"></i>
                                         </div>
                                        
                                         <div class="form-group">
-                                            <textarea rows="4" id="textarea" required="required"></textarea>
-                                            <label class="control-label" for="textarea">Description</label><i
+                                           <input type="text" name="Educationstatus" required="required" value="{{user.Education.[2]}}" />
+                                            <label class="control-label" for="input">Education Status</label><i
                                                 class="mtrl-select"></i>
                                         </div>
+                                        
                                         <div class="submit-btns">
-                                            <button type="button" class="mtr-btn"><span>Cancel</span></button>
-                                            <button type="button" class="mtr-btn"><span>Update</span></button>
+                                           
+                                          
+												<button type="submit" class="mtr-btn" onclick="return confirm('Make sure Enter details are currect ?')"><span>Update</span></button>
                                         </div>
                                     </form>
                                 </div>

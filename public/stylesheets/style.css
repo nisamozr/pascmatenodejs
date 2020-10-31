@@ -723,6 +723,8 @@ header.sticky {
     display: inline-block;
     transform: scale(0.7);
     vertical-align: inherit;
+    height: 60px;
+    width: 60px;
 }
 
 .form-search {
@@ -3864,7 +3866,7 @@ a.forgot-pwd {
     width: 100%;
 }
 
-.editing-interest form ol > li a {
+.editing-interest form ol > li p {
     background: #ebebeb none repeat scroll 0 0;
     display: inline-block;
     font-size: 14px;
@@ -10078,3 +10080,30 @@ aside.sidebar.full-style {
 .dd{
     display: none;
 }
+#demodob{
+    display: none;
+}
+#hhhhh{
+    background-color: white;
+  
+    margin-right: 10px;
+}
+#err{
+    display: block;
+   
+    color: tomato;
+    text-align: center;
+}
+.post-image{
+    width: 70px;
+    height: 70px;
+}
+#post-img-preview {
+    
+    width: 200px;
+    height: 150px;
+}
+#post-video-preview{
+    width: 200px;
+    height: 150px;
+} 

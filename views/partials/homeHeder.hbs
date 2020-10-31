@@ -1,13 +1,12 @@
 <div class="theme-layout">
 	
-	
-	<div class="responsive-header ">
-		<div class="mh-head first Sticky stick">
+	<div class="responsive-header">
+		<div class="mh-head first Sticky">
 			<span class="mh-btns-left">
-				<a class="" href="#menu"><i class="fa fa-align-justify"></i></a>
+				<a  href="#menu"><i class="fa fa-align-justify"></i></a>
 			</span>
 			<span class="mh-text">
-				<a href="/" title=""><img src="images/logo2.png" alt=""></a>
+				<a href="" title=""><img src="images/logo2.png" alt=""></a>
 			</span>
 			<span class="mh-btns-right">
 
@@ -15,7 +14,7 @@
 				<div class="user-img">
 				<img src="images/resources/admin.jpg" alt="">
 				
-				<div class="user-setting">
+				<div class="user-setting useinde" >
 					
 					<a href="time-line.html" title=""><i class="ti-user"></i> {{user.Username}}</a>
 					<a href="edit-profile-basic.html" title=""><i class="ti-pencil-alt"></i>edit profile</a>
@@ -23,14 +22,9 @@
 					
 					<a href="#" title=""><i class="ti-power-off"></i>log out</a>
 				</div>
-			</div>
+				</div>
 			
 			</span>
-			
-		
-					
-				
-			
 		</div>
 		<div class="mh-head second">
 			<form class="mh-form">
@@ -38,17 +32,8 @@
 				<a href="#/" class="fa fa-search"></a>
 			</form>
 		</div>
-
-
-
-
-
-
 		<nav id="menu" class="res-menu">
 			<ul>
-				
-			
-				
 				<aside class="sidebar static sidebarMenu">
 					<div class="widget">
 						<h4 class="widget-title">Shortcuts</h4>
@@ -118,15 +103,13 @@
 					
 					
 				</aside>
+			
 				
-				
-				
-				
-				
-				
+			</ul>
 		</nav>
-		
+	
 	</div><!-- responsive header -->
+	
 	
 	<div class="topbar stick">
 		<div class="logo">
@@ -158,7 +141,7 @@
 			</ul>
 			<div class="user-img">
 				
-				<img src="images/resources/admin.jpg" alt="">
+				<img  src="/userData/ProfilePic/{{user._id}}.jpg"  alt="">
 				<span class="status f-online"></span>
 					<div class="user-setting">
 						

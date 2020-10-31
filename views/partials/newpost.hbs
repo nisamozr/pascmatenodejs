@@ -1,0 +1,40 @@
+<div class="central-meta">
+									<div class="new-postbox">
+										<figure>
+											<img src="/userData/ProfilePic/{{user._id}}.jpg" alt="" class="post-image">
+										</figure>
+										<div class="newpst-input">
+											<form action="/addPost" method="post" id="form-add-post" enctype="multipart/form-data"  >
+											{{!-- onsubmit="return doPost(this); --}}
+												<textarea rows="2" name="caption" placeholder="write something"></textarea>
+												<div class="attachments">
+													<ul>
+														<li>
+															<img id="post-img-preview" style="display: none;" >
+														</li>
+														<li><video id="post-video-preview" controls style="display: none;" ></video></li>
+													
+														<li>
+															<i class="fa fa-image"></i>
+															<label class="fileContainer">
+																<input type="file" name="image" accept="image/*" onchange="previewPostImage(this)">
+															</label>
+														</li>
+														<li>
+															<i class="fa fa-video-camera"></i>
+															<label class="fileContainer">
+																<input type="file" name="video" accept="video/*" onchange="previewPostVideo(this)">
+															</label>
+														</li>
+														
+														<li>
+															<button type="submit">Post</button>
+														</li>
+													</ul>
+												</div>
+											</form>
+										</div>
+									</div>
+								</div><!-- add post new box -->
+
+

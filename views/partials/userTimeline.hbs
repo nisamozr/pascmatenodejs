@@ -1,0 +1,124 @@
+<div class="col-lg-6">
+	{{>newpost}}
+	<div class="loadMore">
+		{{#each userposts}}
+		<div class="central-meta item">
+			<div class="user-post">
+				<div class="friend-info">
+					<figure>
+						<img src="images/resources/friend-avatar10.jpg" alt="">
+					</figure>
+					<div class="friend-name">
+						<ins><a href="time-line.html" title="">{{../user.Fulname}}</a></ins>
+						<span>published: june,2 2018 19:PM</span>
+					</div>
+					<div class="post-meta">
+						<img src="{{this.image}}" alt="">
+
+						<div class="vid" id="videoDiv">
+							<video controls='true' id="video">
+								<source id="source" src="{{this.video}}" type="video/mp4">
+								{{!-- resoues/video.mp4 --}}
+
+							</video>
+						</div>
+						<div class="description">
+
+							<p>
+								{{this.Caption}}
+							</p>
+						</div>
+						<div class="we-video-info">
+							<ul>
+								<!-- <li>
+															<span class="views" data-toggle="tooltip" title="views">
+																<i class="fa fa-eye"></i>
+																<ins>1.2k</ins>
+															</span>
+														</li> -->
+
+								<li>
+									<span class="like" data-toggle="tooltip" title="like">
+										<i class="ti-heart"></i>
+										<ins>2.2k</ins>
+									</span>
+								</li>
+
+								<li>
+									<span class="comment" data-toggle="tooltip" title="Comments">
+										<i class="fa fa-comments-o"></i>
+										<ins>52</ins>
+									</span>
+								</li>
+
+							</ul>
+						</div>
+
+					</div>
+				</div>
+				<div class="coment-area">
+					<ul class="we-comet">
+						<li>
+							<div class="comet-avatar">
+								<img src="images/resources/comet-1.jpg" alt="">
+							</div>
+							<div class="we-comment">
+								<div class="coment-head">
+									<h5><a href="time-line.html" title="">Jason borne</a></h5>
+									<span>1 year ago</span>
+
+								</div>
+								<p>we are working for the dance and sing songs. this car is very awesome for the
+									youngster. please vote this car and like our post</p>
+							</div>
+
+						</li>
+						<li>
+							<div class="comet-avatar">
+								<img src="images/resources/comet-1.jpg" alt="">
+							</div>
+							<div class="we-comment">
+								<div class="coment-head">
+									<h5><a href="time-line.html" title="">Donald Trump</a></h5>
+									<span>1 week ago</span>
+
+								</div>
+								<p>we are working for the dance and sing songs. this video is very awesome for the
+									youngster. please vote this video and like our channel
+									<i class="em em-smiley"></i>
+								</p>
+							</div>
+						</li>
+						<li>
+							<a href="#" title="" class="showmore underline">more comments</a>
+						</li>
+						<li class="post-comment">
+							<div class="comet-avatar">
+								<img src="images/resources/comet-1.jpg" alt="">
+							</div>
+							<div class="post-comt-box">
+								<form method="post">
+									<textarea placeholder="Post your comment"></textarea>
+
+									<button type="button"></button>
+								</form>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		{{/each}}
+
+
+
+
+	</div>
+</div><!-- centerl meta -->
+  <script>
+        var v = document.getElementById("video");
+        v.error = function () {
+            document.getElementById('videoDiv').style.display = "none";
+        }
+
+    </script>

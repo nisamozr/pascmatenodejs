@@ -7,6 +7,9 @@ var hbs = require('express-handlebars')
 var db = require('./config/connection')
 var fileUpload = require('express-fileupload')
 var session = require('express-session');
+const util = require("util");
+const multer = require("multer");
+const GridFsStorage = require("multer-gridfs-storage");
 
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
@@ -23,7 +26,7 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: false })); 
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
-app.use(fileUpload())
+app.use(fileUpload());
 app.use(session({secret:'key',cookie:{maxAge:6000000000000}}))
 db.connect((err)=>{
   if(err){
